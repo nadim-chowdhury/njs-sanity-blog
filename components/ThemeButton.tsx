@@ -17,6 +17,7 @@ export default function ThemeButton() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      className="p-1 border rounded-full"
     >
       {resolvedTheme === "dark" ? (
         <svg
@@ -25,7 +26,7 @@ export default function ThemeButton() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-4 h-4"
         >
           <path
             strokeLinecap="round"
@@ -40,7 +41,7 @@ export default function ThemeButton() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-4 h-4"
         >
           <path
             strokeLinecap="round"
