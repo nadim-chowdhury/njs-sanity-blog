@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "@/components/Providers";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,13 @@ export default function RootLayout({
           <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>
+
+          <Link
+            href="https://nadim.vercel.app"
+            className="max-w-3xl mx-auto text-gray-300 block text-md my-6 px-4 sm:px-6 lg:px-8"
+          >
+            Developed by Nadim Chowdhury
+          </Link>
         </Providers>
       </body>
     </html>
